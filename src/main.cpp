@@ -30,7 +30,7 @@ void setup() {
   Serial.begin(9600);
   while (!Serial) {}
   Serial.println("__ OK __");  
-  GF.setup(Serial2);  
+  GF.setup(Serial);  
   GF.setDataHandler(dataHandler);
   GF.setErrorHandler(errorHandler);
 }
